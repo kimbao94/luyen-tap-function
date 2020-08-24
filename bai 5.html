@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let starname = prompt("nhập tên ngôi sao")
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" , "Leo"];
+    alert(Star(starname))
+    function Star(name) {
+        if(arr1.includes(name)){
+            return arr2[arr1.indexOf(name)];
+        } else return name + " không phải ngôi sao";
+    }
+</script>
+</body>
+</html>
